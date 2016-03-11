@@ -1,0 +1,71 @@
+﻿
+@{
+    Layout = null;
+}
+@using System.Web.Optimization
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    @Styles.Render("~/Content/site")
+    @Styles.Render("~/Content/dependencies/loaders.css/loaders.css")
+    @Styles.Render("~/Content/dependencies/bootstrap/dist/css/bootstrap.css")
+    @Styles.Render("~/Content/dependencies/fontawesome/css/font-awesome.css")
+    @Styles.Render("~/Content/dependencies/swiper/dist/css/swiper.css")
+    @Styles.Render("~/Content/dependencies/formstone/dist/css/lightbox.css")
+    @Styles.Render("~/Content/dependencies/animate.css/animate.css")
+    @Styles.Render("~/Content/assets/stylesheets/app.css")
+    <!-- Google Fonts -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic|Montserrat:400,700">
+    <style type="text/css">
+
+    </style>
+
+</head>
+    <body>
+        @Html.Partial("first_block")
+        <div>
+        </div>
+        <!-- Project Scripts 
+  =====================================-->
+  @Scripts.Render("~Content/dependencies/jquery/dist/jquery.js")
+  @Scripts.Render("~Content/dependencies/bootstrap/dist/js/bootstrap.js")
+  @Scripts.Render("~Content/dependencies/swiper/dist/js/swiper.js")
+  @Scripts.Render("~Content/dependencies/formstone/dist/js/core.js")
+  @Scripts.Render("~Content/dependencies/formstone/dist/js/transition.js")
+  @Scripts.Render("~Content/dependencies/formstone/dist/js/lightbox.js")
+  @Scripts.Render("http://maps.google.com/maps/api/js?sensor=false&amp;language=en")
+  @Scripts.Render("~Content/dependencies/gmap3/dist/gmap3.min.js")
+  @Scripts.Render("~Content/dependencies/wow.js/dist/wow.js")
+  @Scripts.Render("~Content/assets/javascripts/app.js")
+  <script>
+    $('#google-maps').gmap3({
+      map:{
+        options:{
+          center: [23.739283, 90.389137],
+          zoom: 15
+        }
+      },
+      marker:{
+        latLng:[23.739283, 90.389137],
+        options: {
+         icon: new google.maps.MarkerImage(
+           "assets/images/map-marker.png",
+           new google.maps.Size(48, 60, "px", "px")
+           )
+       }
+     }
+   });
+
+    // scrollReveal Init
+    if (screen.width > 966) {
+      $( document ).ready(function() {
+        new WOW().init();
+      });
+    }
+
+  </script>
+    </body>
+</html>
