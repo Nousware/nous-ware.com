@@ -26,6 +26,7 @@ var CODEXCODER = CODEXCODER || {};
 			CODEXCODER.initialize.newsletterAjax();
 
 		},
+
 		defaults: function() {
 		    // Light Box
 		    $('[data-lightbox="yes"]').lightbox();
@@ -188,13 +189,13 @@ var CODEXCODER = CODEXCODER || {};
 
 			$('[data-screenshot="carousel"]').each( function() {
 
-				var slidesPerViewVar = 4;
+			    var slidesPerViewVar = 3;
 
 				ssrFix();
 
 				function ssrFix() {
 					var iW = window.innerWidth;
-					if (iW > 992) slidesPerViewVar = 4;
+					if (iW > 992) slidesPerViewVar = 3;
 					if (iW > 768 && iW <= 992) slidesPerViewVar = 3;
 					if (iW > 480 && iW <= 768) slidesPerViewVar = 2;
 					if (iW <= 480) slidesPerViewVar = 1;
@@ -207,14 +208,14 @@ var CODEXCODER = CODEXCODER || {};
 
 				// Carousel Contents
 
-				var items = 4;
+				var items = 3;
 
 				var swiper = new Swiper( '#' + carouselInt, {
 					pagination: '#' + carouselPag,
 					paginationClickable: '#' + carouselPag,
 					nextButton: '#' + carouselNex,
 					prevButton: '#' + carouselPre,
-					spaceBetween: 30,
+					spaceBetween: 10,
 					slidesPerView: slidesPerViewVar,
 				});
 

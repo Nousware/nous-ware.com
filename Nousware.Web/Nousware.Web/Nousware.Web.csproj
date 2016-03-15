@@ -143,29 +143,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\assets\images\application-screenshot.png" />
-    <Content Include="Content\assets\images\application-twin-mockup.png" />
     <Content Include="Content\assets\images\articles\01.jpg" />
     <Content Include="Content\assets\images\client.jpg" />
+    <Content Include="Content\assets\images\client2.jpg" />
+    <Content Include="Content\assets\images\client3.jpg" />
+    <Content Include="Content\assets\images\client4.jpg" />
+    <Content Include="Content\assets\images\client5.jpg" />
     <Content Include="Content\assets\images\contact-map.jpg" />
     <Content Include="Content\assets\images\contact-map.png" />
     <Content Include="Content\assets\images\download-bg.jpg" />
     <Content Include="Content\assets\images\header-bg.jpg" />
-    <Content Include="Content\assets\images\header-mobile-mockup-hand.png" />
-    <Content Include="Content\assets\images\header-mobile-mockup.png" />
-    <Content Include="Content\assets\images\logo.png" />
     <Content Include="Content\assets\images\logo\1.png" />
     <Content Include="Content\assets\images\logo\2.png" />
     <Content Include="Content\assets\images\logo\3.png" />
     <Content Include="Content\assets\images\logo\4.png" />
+    <Content Include="Content\assets\images\logo\logo.png" />
     <Content Include="Content\assets\images\map-marker.png" />
     <Content Include="Content\assets\images\mask.svg" />
-    <Content Include="Content\assets\images\members\aminul.jpg" />
-    <Content Include="Content\assets\images\members\mamun.jpg" />
-    <Content Include="Content\assets\images\members\rasel.jpg" />
-    <Content Include="Content\assets\images\members\sojib.jpg" />
+    <Content Include="Content\assets\images\members\denis.jpg" />
+    <Content Include="Content\assets\images\members\dima.jpg" />
+    <Content Include="Content\assets\images\members\eugene.jpg" />
+    <Content Include="Content\assets\images\members\misha.jpg" />
+    <Content Include="Content\assets\images\members\ramil.jpg" />
     <Content Include="Content\assets\images\newsletter-bg.jpg" />
     <Content Include="Content\assets\images\ov-t-bg.png" />
     <Content Include="Content\assets\images\post-thumb.jpg" />
+    <Content Include="Content\assets\images\application-twin-mockup.png" />
     <Content Include="Content\assets\images\screenshots\screenshot-1.jpg" />
     <Content Include="Content\assets\images\screenshots\screenshot-2.jpg" />
     <Content Include="Content\assets\images\screenshots\screenshot-3.jpg" />
@@ -173,6 +176,7 @@
     <Content Include="Content\assets\images\testimonials-bg.jpg" />
     <Content Include="Content\assets\images\testimonials-lg-bg-dark.png" />
     <Content Include="Content\assets\images\testimonials-lg-bg.png" />
+    <Content Include="Content\assets\images\up.png" />
     <Content Include="Content\assets\images\user.jpg" />
     <Content Include="Content\assets\javascripts\app.js" />
     <Content Include="Content\assets\stylesheets\app.css" />
@@ -185,7 +189,6 @@
     <Content Include="Content\dependencies\fontawesome\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\dependencies\fontawesome\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\dependencies\fontawesome\fonts\FontAwesome.otf" />
-    <None Include="Content\section-1.less" />
     <Content Include="Content\dependencies\animate.css\animate.css" />
     <Content Include="Content\dependencies\bootstrap\dist\css\bootstrap.css" />
     <Content Include="Content\dependencies\bootstrap\dist\js\bootstrap.js" />
@@ -257,6 +260,16 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Content\Site.less" />
     <Content Include="Views\Home\first_block.cshtml" />
+    <Content Include="Views\Home\Soft_world.cshtml" />
+    <Content Include="Views\Home\Features.cshtml" />
+    <Content Include="Views\Home\Newsletter.cshtml" />
+    <Content Include="Views\Home\Team.cshtml" />
+    <Content Include="Views\Home\Screenshot.cshtml" />
+    <Content Include="Views\Home\Price.cshtml" />
+    <Content Include="Views\Home\Client.cshtml" />
+    <Content Include="Views\Home\Logos.cshtml" />
+    <Content Include="Views\Home\Contacts.cshtml" />
+    <Content Include="Views\Home\Footer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
