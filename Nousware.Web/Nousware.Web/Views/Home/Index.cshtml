@@ -21,7 +21,8 @@
     @Scripts.Render("~/Content/dependencies/wow.js/dist/wow.js")
     @Scripts.Render("~/Content/assets/javascripts/app.js")
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script type='text/javascript' src='/js/scrollup.js'></script>
+    @*@Scripts.Render("http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")*@
+    
 
    
     <!-- Google Fonts -->
@@ -31,50 +32,78 @@
     </style>
 
 </head>
-    <body class="gradient custom-body nousware-body">
-        @Html.Partial("first_block")
-        @Html.Partial("Soft_world")
-        @Html.Partial("Features")
-        @Html.Partial("Newsletter")
-        @Html.Partial("Team")
-        @Html.Partial("Screenshot")
-        @Html.Partial("Price")
-        @Html.Partial("Client")
-        @Html.Partial("Logos")
-        @Html.Partial("Contacts")
-        @Html.Partial("Footer")
-        <div id="scrollup"><img alt="Up" src="/content/assets/images/up.png"></div>
-    <div>
-       
-    </div>
-        <!-- Project Scripts 
-  =====================================-->
-  <script>
+<body class="gradient custom-body nousware-body">
+                @Html.Partial("first_block")
+                @Html.Partial("Soft_world")
+                @Html.Partial("Features")
+                @Html.Partial("Newsletter")
+                @Html.Partial("Team")
+                @Html.Partial("Screenshot")
+                @Html.Partial("Price")
+                @Html.Partial("Tech")
+                @Html.Partial("Logos")
+                @Html.Partial("Contacts")
+                @Html.Partial("Footer")
+
+<div>
+
+</div>
+<!-- Project Scripts
+=====================================-->
+<script>
     $('#google-maps').gmap3({
-      map:{
-        options:{
-          center: [23.739283, 90.389137],
-          zoom: 15
+        map: {
+            options: {
+                center: [53.760253, 87.145903],
+                zoom: 15
+            }
+        },
+        marker: {
+            latLng: [53.760253, 87.145903],
+            options: {
+                icon: new google.maps.MarkerImage(
+                    "content/assets/images/map-marker.png",
+                    new google.maps.Size(48, 60, "px", "px")
+                )
+            }
         }
-      },
-      marker:{
-        latLng:[23.739283, 90.389137],
-        options: {
-         icon: new google.maps.MarkerImage(
-           "assets/images/map-marker.png",
-           new google.maps.Size(48, 60, "px", "px")
-           )
-       }
-     }
-   });
+    });
 
     // scrollReveal Init
     if (screen.width > 966) {
-      $( document ).ready(function() {
-        new WOW().init();
-      });
+        $(document).ready(function() {
+            new WOW().init();
+        });
     }
 
-  </script>
-    </body>
+</script>
+    <script type="text/javascript">
+
+$(function() {
+
+$(window).scroll(function() {
+
+if($(this).scrollTop() != 0) {
+
+$('#toTop').fadeIn();
+
+} else {
+
+$('#toTop').fadeOut();
+
+}
+
+});
+
+$('#toTop').click(function() {
+
+$('body,html').animate({scrollTop:0},800);
+
+});
+
+});
+
+    </script>
+    <DIV ID="toTop"> <img src="content/assets/images/up_3.png"/> </DIV>
+</body>
 </html>
