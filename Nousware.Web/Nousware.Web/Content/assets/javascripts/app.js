@@ -190,6 +190,8 @@ var CODEXCODER = CODEXCODER || {};
 			$('[data-screenshot="carousel"]').each( function() {
 
 			    var slidesPerViewVar = 3;
+			    if ($('#regPage').length > 0)
+			        slidesPerViewVar = 1;
 
 				ssrFix();
 
@@ -199,6 +201,9 @@ var CODEXCODER = CODEXCODER || {};
 					if (iW > 768 && iW <= 992) slidesPerViewVar = 3;
 					if (iW > 480 && iW <= 768) slidesPerViewVar = 2;
 					if (iW <= 480) slidesPerViewVar = 1;
+
+					if ($('#regPage').length > 0)
+					    slidesPerViewVar = 1;
 				}
 
 				var carouselInt = $(this).find('[data-carousel="content"]').attr('id');
@@ -206,6 +211,8 @@ var CODEXCODER = CODEXCODER || {};
 				var carouselNex = $(this).find('[data-carousel="next"]').attr('id');
 				var carouselPre = $(this).find('[data-carousel="prev"]').attr('id');
 
+			    // hide block
+				
 				// Carousel Contents
 
 				var items = 3;

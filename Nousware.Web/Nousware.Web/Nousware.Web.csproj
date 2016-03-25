@@ -142,6 +142,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\assets\images\AngularJS_logo.png" />
     <Content Include="Content\assets\images\application-screenshot.png" />
     <Content Include="Content\assets\images\articles\01.jpg" />
     <Content Include="Content\assets\images\client.jpg" />
@@ -153,10 +154,18 @@
     <Content Include="Content\assets\images\contact-map.png" />
     <Content Include="Content\assets\images\download-bg.jpg" />
     <Content Include="Content\assets\images\header-bg.jpg" />
+    <Content Include="Content\assets\images\HTML5_Logo.png" />
+    <Content Include="Content\assets\images\icon-AGILE.png" />
+    <Content Include="Content\assets\images\icon-DDD.png" />
+    <Content Include="Content\assets\images\icon-TDD.png" />
+    <Content Include="Content\assets\images\icon_analytics.png" />
+    <Content Include="Content\assets\images\icon_exist.png" />
+    <Content Include="Content\assets\images\icon_laptop.png" />
+    <Content Include="Content\assets\images\icon_mobile.png" />
+    <Content Include="Content\assets\images\icon_new.png" />
+    <Content Include="Content\assets\images\LinkedIn_Logo.png" />
     <Content Include="Content\assets\images\logo\1.png" />
     <Content Include="Content\assets\images\logo\2.png" />
-    <Content Include="Content\assets\images\logo\3.png" />
-    <Content Include="Content\assets\images\logo\4.png" />
     <Content Include="Content\assets\images\logo\logo.png" />
     <Content Include="Content\assets\images\map-marker.png" />
     <Content Include="Content\assets\images\mask.svg" />
@@ -165,10 +174,14 @@
     <Content Include="Content\assets\images\members\eugene.jpg" />
     <Content Include="Content\assets\images\members\misha.jpg" />
     <Content Include="Content\assets\images\members\ramil.jpg" />
+    <Content Include="Content\assets\images\MicrosoftSQLServer.png" />
+    <Content Include="Content\assets\images\MongoDB-Logo.png" />
     <Content Include="Content\assets\images\newsletter-bg.jpg" />
     <Content Include="Content\assets\images\ov-t-bg.png" />
     <Content Include="Content\assets\images\post-thumb.jpg" />
     <Content Include="Content\assets\images\application-twin-mockup.png" />
+    <Content Include="Content\assets\images\process_steps.png" />
+    <Content Include="Content\assets\images\ravendb_logo2.png" />
     <Content Include="Content\assets\images\screenshots\screenshot-1.jpg" />
     <Content Include="Content\assets\images\screenshots\screenshot-2.jpg" />
     <Content Include="Content\assets\images\screenshots\screenshot-3.jpg" />
@@ -177,6 +190,8 @@
     <Content Include="Content\assets\images\testimonials-lg-bg-dark.png" />
     <Content Include="Content\assets\images\testimonials-lg-bg.png" />
     <Content Include="Content\assets\images\up.png" />
+    <Content Include="Content\assets\images\up_2.png" />
+    <Content Include="Content\assets\images\up_3.png" />
     <Content Include="Content\assets\images\user.jpg" />
     <Content Include="Content\assets\javascripts\app.js" />
     <Content Include="Content\assets\stylesheets\app.css" />
@@ -259,17 +274,19 @@
     </Content>
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Content\Site.less" />
-    <Content Include="Views\Home\first_block.cshtml" />
-    <Content Include="Views\Home\Soft_world.cshtml" />
-    <Content Include="Views\Home\Features.cshtml" />
-    <Content Include="Views\Home\Newsletter.cshtml" />
-    <Content Include="Views\Home\Team.cshtml" />
-    <Content Include="Views\Home\Screenshot.cshtml" />
-    <Content Include="Views\Home\Price.cshtml" />
-    <Content Include="Views\Home\Client.cshtml" />
-    <Content Include="Views\Home\Logos.cshtml" />
-    <Content Include="Views\Home\Contacts.cshtml" />
-    <Content Include="Views\Home\Footer.cshtml" />
+    <Content Include="Views\Home\_first_block.cshtml" />
+    <Content Include="Views\Home\_Soft_world.cshtml" />
+    <Content Include="Views\Home\_Features.cshtml" />
+    <Content Include="Views\Home\_Team.cshtml" />
+    <Content Include="Views\Home\_Team_01.cshtml" />
+    <Content Include="Views\Home\_Screenshot.cshtml" />
+    <Content Include="Views\Home\_Price.cshtml" />
+    <Content Include="Views\Home\_Tech.cshtml" />
+    <Content Include="Views\Home\_Logos.cshtml" />
+    <Content Include="Views\Home\_Contacts.cshtml" />
+    <Content Include="Views\Home\_Footer.cshtml" />
+    <Content Include="Views\Home\UserReg.cshtml" />
+    <Content Include="Views\Home\development_line.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

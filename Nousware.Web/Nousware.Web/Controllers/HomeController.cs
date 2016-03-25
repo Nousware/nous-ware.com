@@ -13,5 +13,12 @@ namespace Nousware.Web.Controllers
         {
             return View();
         }
+
+        public ActionResult UserReg(int price)
+        {
+
+            return View();
+        }
+
     }
 }

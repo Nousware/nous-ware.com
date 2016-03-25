@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     @*@Scripts.Render("http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js")*@
     
+    
 
    
     <!-- Google Fonts -->
@@ -35,13 +36,14 @@
 <body class="gradient custom-body nousware-body">
                 @Html.Partial("_first_block")
                 @Html.Partial("_Soft_world")
-                @Html.Partial("_Features")
-                @Html.Partial("_Newsletter")
-                @Html.Partial("_Team")
-                @Html.Partial("_Screenshot")
-                @Html.Partial("_Price")
                 @Html.Partial("_Tech")
                 @Html.Partial("_Logos")
+                @Html.Partial("_Team")
+                
+                @*@Html.Partial("_Screenshot")*@
+                @Html.Partial("_Price")
+                @*@Html.Partial("_Features")*@
+                
                 @Html.Partial("_Contacts")
                 @Html.Partial("_Footer")
 
@@ -54,15 +56,15 @@
     $('#google-maps').gmap3({
         map: {
             options: {
-                center: [53.760253, 87.145903],
+                center: [53.760386, 87.148733],
                 zoom: 15
             }
         },
         marker: {
-            latLng: [53.760253, 87.145903],
+            latLng: [53.760386, 87.148733],
             options: {
                 icon: new google.maps.MarkerImage(
-                    "content/assets/images/map-marker.png",
+                    "/content/assets/images/map-marker.png",
                     new google.maps.Size(48, 60, "px", "px")
                 )
             }
@@ -104,6 +106,6 @@ $('body,html').animate({scrollTop:0},800);
 });
 
     </script>
-    <DIV ID="toTop"> <img src="content/assets/images/up_3.png"/> </DIV>
+    <DIV ID="toTop"> <img src="/content/assets/images/up.png"/> </DIV>
 </body>
 </html>
