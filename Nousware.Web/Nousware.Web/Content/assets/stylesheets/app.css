@@ -688,14 +688,27 @@ table tbody tr th, table tbody tr td {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
   .banner-section .banner-content .banner-title {
-    font-size: 2em; }
+    font-size: 14px !important; }
   .banner-section .banner-content .banner-description {
-    font-size: 1em; }
+    font-size: 14px !important; }
   .banner-section .banner-content .action-buttons > a {
     display: block;
     margin: 10px 0;
     text-align: center; }
+    
    }
+
+@media (max-width: 768px) {
+    .banner-title.text-uppercase.wow.fadeIn {
+        font-size: 14px;
+    }
+    .cut-off{
+        display: none;
+    }
+}
+
+
+
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (orientation: landscape) {
   .banner-section .banner-content .action-buttons {
