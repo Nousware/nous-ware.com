@@ -697,9 +697,10 @@ table tbody tr th, table tbody tr td {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
   .banner-section .banner-content .banner-title {
-    font-size: 14px !important; }
+    font-size: 14px !important;
+  }
   .banner-section .banner-content .banner-description {
-    font-size: 14px !important; }
+    font-size: 10px !important; }
   .banner-section .banner-content .action-buttons > a {
     display: block;
     margin: 10px 0;
@@ -714,6 +715,13 @@ table tbody tr th, table tbody tr td {
     .cut-off{
         display: none;
     }
+    .banner-section .banner-content .banner-title {
+        margin: 10px;
+    }
+    .banner-section .banner-content .banner-description {
+        padding-top: 0px;
+        font-size: 12px;
+    }
 }
 @media (max-width: 768px) {
     .description {
@@ -721,14 +729,14 @@ table tbody tr th, table tbody tr td {
         text-align: left;
         padding: 0px;
     }
-   
+
 }
 @media (max-width: 768px) {
     .description1 {
         font-size: 12px;
         padding: 0px;
     }
-   
+
 }
 
 
