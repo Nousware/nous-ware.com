@@ -297,6 +297,10 @@ var CODEXCODER = CODEXCODER || {};
 	// Initialize Functions
 	$(document).ready( CODEXCODER.documentOnReady.init );
 	$(window).on( 'resize', CODEXCODER.documentOnResize.init );
-	$(document).on( 'scroll', CODEXCODER.documentOnScroll.init );
+	$(document).on('scroll', CODEXCODER.documentOnScroll.init);
+
+
+
+
 
 })(jQuery);

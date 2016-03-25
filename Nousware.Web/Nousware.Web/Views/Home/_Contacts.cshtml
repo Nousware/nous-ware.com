@@ -39,7 +39,7 @@
             <div class="col-md-4 wow fadeInUp" data-wow-delay="1.1s">
                 <div class="contact-container">
                     <h3 class="contact-title text-uppercase">Quick Message</h3>
-                    <form action="index.php" class="contact-form">
+                    <form id="sendform" action="/" class="contact-form" method="post">
                         <input type="text" name="name" id="name" placeholder="Name">
                         <input type="email" name="email" id="email" placeholder="E-Mail">
                         <textarea name="message" id="message" placeholder="Message"></textarea>
@@ -50,4 +50,18 @@
 
         </div><!-- /.container -->
     </div><!-- /.overlay -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sendform").submit(function (event) {
+                $.ajax({
+                    type: "POST",
+                    url: "/",
+                    data: { name: $("#name").val(), email: $("#email").val(), message: $("#message").val() }
+                });
+                event.preventDefault();
+            });
+        });
+    </script>
 </section><!-- /#contact -->
+
+
