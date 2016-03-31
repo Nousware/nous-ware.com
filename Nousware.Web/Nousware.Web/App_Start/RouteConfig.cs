@@ -14,6 +14,11 @@ namespace Nousware.Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Getus",
+                url: "getus/{id}",
+                defaults: new { controller = "Home", action = "UserReg", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
