@@ -72,7 +72,9 @@ img, figure {
 
 /* Middle Image */
 .middle-img img {
-  margin: 0 auto; }
+  margin: 0 auto;
+    bottom: 0;
+}
 
 /* Overlay Effects */
 .overlay {
@@ -236,7 +238,8 @@ font-size:11px;
   font-weight: 700;
   text-decoration: none;
   -webkit-transition: all 0.15s ease-in-out;
-          transition: all 0.15s ease-in-out; }
+          transition: all 0.15s ease-in-out;
+}
   .aw-btn:hover {
     text-decoration: none;
     background-color: #4798d9;
@@ -407,7 +410,8 @@ table tbody tr th, table tbody tr td {
     display: none; }
   #navigation.navigation-style-1 .site-navigation {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+  }
     #navigation.navigation-style-1 .site-navigation > li {
       list-style: none; }
       #navigation.navigation-style-1 .site-navigation > li > a {
@@ -653,15 +657,18 @@ table tbody tr th, table tbody tr td {
 .banner-section {
   margin-bottom: 0px; }
   .banner-section .overlay > .container {
-    padding: 0; }
+    padding: 0;
+      bottom: 40px;
+  }
   .banner-section .banner-middle-content {
     position: relative;
-    text-align: center;
+    text-align: left;
     top: 25%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-            transform: translateX(50%)     
+      top: 50%;
+            /*transform: translateX(50%)*/     
   }
   
   .banner-section .banner-content .banner-title {
@@ -673,7 +680,9 @@ table tbody tr th, table tbody tr td {
     line-height: 1.2em;
     margin-bottom: 25px; }
   .banner-section .application-mockup {
-    position: relative; }
+    position: relative;
+      bottom: 50px;
+  }
     .banner-section .application-mockup .overlay-image {
       position: absolute;
       left: 35%;
@@ -685,9 +694,16 @@ table tbody tr th, table tbody tr td {
       max-height: 750px; }
     .banner-section .application-mockup .banner-image-2 {
       height: auto;
-      position: absolute;
+      /*position: absolute;*/
       bottom: 0px;
-      height: 75%; }
+        padding-left: 20px;
+        /*height: 30%;*/
+    }
+ 
+.logo-head {
+    padding-top: 10px;
+    width: 256px;
+}
 
 @media (max-width: 410px) {
   .banner-section .banner-content .action-buttons > a {
@@ -710,22 +726,24 @@ table tbody tr th, table tbody tr td {
 
 @media (max-width: 768px) {
     .banner-title.text-uppercase.wow.fadeIn {
-        font-size: 14px;
+        font-size: 30px;
     }
     .cut-off{
         display: none;
     }
     .banner-section .banner-content .banner-title {
         margin: 10px;
+        text-align: center;
     }
     .banner-section .banner-content .banner-description {
         padding-top: 0px;
-        font-size: 12px;
+        font-size: 20px;
+        text-align: center;
     }
 }
 @media (max-width: 768px) {
     .description {
-        font-size: 14px;
+        font-size: 16px;
         text-align: left;
         padding: 0px;
     }
@@ -751,6 +769,9 @@ table tbody tr th, table tbody tr td {
         margin-left: 5%; } }
 
 /* 4.0 - Achieves */
+.z-index99 {
+    z-index: 99;
+}
 .achieve-item {
   margin-top: 100px;
   padding: 0 10px;
@@ -2414,13 +2435,18 @@ margin-left: -25px;
     border-top-right-radius: 6px;
     
 }
+
 @media (max-width: 992px) {
   .whiteblock {
-    min-width: 92%; } }
+    min-width: 92%; } 
+  .whiteblock1 {
+      display: none;
+  }
+}
 
 @media (max-width: 767px) {
   .whiteblock {
-    min-width: 91.3%; } }
+    min-width: 89.3%; } }
 
 .member-profile {
   padding: 25px;

@@ -153,6 +153,7 @@
     <Content Include="Content\assets\images\contact-map.jpg" />
     <Content Include="Content\assets\images\contact-map.png" />
     <Content Include="Content\assets\images\download-bg.jpg" />
+    <Content Include="Content\assets\images\header-bg-01.jpg" />
     <Content Include="Content\assets\images\header-bg.jpg" />
     <Content Include="Content\assets\images\HTML5_Logo.png" />
     <Content Include="Content\assets\images\icon-AGILE.png" />
@@ -167,6 +168,7 @@
     <Content Include="Content\assets\images\logo\1.png" />
     <Content Include="Content\assets\images\logo\2.png" />
     <Content Include="Content\assets\images\logo\logo.png" />
+    <Content Include="Content\assets\images\logo\logo_01.png" />
     <Content Include="Content\assets\images\map-marker.png" />
     <Content Include="Content\assets\images\mask.svg" />
     <Content Include="Content\assets\images\members\denis.jpg" />
@@ -182,10 +184,14 @@
     <Content Include="Content\assets\images\application-twin-mockup.png" />
     <Content Include="Content\assets\images\process_steps.png" />
     <Content Include="Content\assets\images\ravendb_logo2.png" />
+    <Content Include="Content\assets\images\Apple-Pro.png" />
+    <Content Include="Content\assets\images\rieltor.png" />
     <Content Include="Content\assets\images\screenshots\screenshot-1.jpg" />
     <Content Include="Content\assets\images\screenshots\screenshot-2.jpg" />
     <Content Include="Content\assets\images\screenshots\screenshot-3.jpg" />
     <Content Include="Content\assets\images\screenshots\screenshot-4.jpg" />
+    <Content Include="Content\assets\images\screenshots\screenshot-5.jpg" />
+    <Content Include="Content\assets\images\screenshots\screenshot-6.jpg" />
     <Content Include="Content\assets\images\testimonials-bg.jpg" />
     <Content Include="Content\assets\images\testimonials-lg-bg-dark.png" />
     <Content Include="Content\assets\images\testimonials-lg-bg.png" />
@@ -287,7 +293,8 @@
     <Content Include="Views\Home\_Footer.cshtml" />
     <Content Include="Views\Home\UserReg.cshtml" />
     <Content Include="Views\Home\development_line.cshtml" />
-    <None Include="Properties\PublishProfiles\nousware.com.pubxml" />
+    <Content Include="Views\Home\OLD-Index.cshtml" />
+    <Content Include="Views\Home\_OLD_first_block.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

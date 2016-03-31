@@ -124,7 +124,7 @@ var CODEXCODER = CODEXCODER || {};
 		bannerHeightFix: function() {
 
 			$(".banner-section > div > .container").css("height", $(".banner-section").height());
-			$(".banner-section .application-mockup").css("height", $(".banner-section").height());
+			//$(".banner-section .application-mockup").css("height", $(".banner-section").height());
 			
 		},
 
@@ -189,7 +189,7 @@ var CODEXCODER = CODEXCODER || {};
 
 			$('[data-screenshot="carousel"]').each( function() {
 
-			    var slidesPerViewVar = 3;
+			    var slidesPerViewVar = 2;
 			    if ($('#regPage').length > 0)
 			        slidesPerViewVar = 1;
 
@@ -197,9 +197,9 @@ var CODEXCODER = CODEXCODER || {};
 
 				function ssrFix() {
 					var iW = window.innerWidth;
-					if (iW > 992) slidesPerViewVar = 3;
-					if (iW > 768 && iW <= 992) slidesPerViewVar = 3;
-					if (iW > 480 && iW <= 768) slidesPerViewVar = 2;
+					if (iW > 992) slidesPerViewVar = 2;
+					if (iW > 768 && iW <= 992) slidesPerViewVar = 1;
+					if (iW > 480 && iW <= 768) slidesPerViewVar = 1;
 					if (iW <= 480) slidesPerViewVar = 1;
 
 					if ($('#regPage').length > 0)
