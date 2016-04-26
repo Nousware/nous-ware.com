@@ -179,6 +179,7 @@
     <Content Include="Content\assets\images\MicrosoftSQLServer.png" />
     <Content Include="Content\assets\images\MongoDB-Logo.png" />
     <Content Include="Content\assets\images\newsletter-bg.jpg" />
+    <Content Include="Content\assets\images\newsletter-bg1.jpg" />
     <Content Include="Content\assets\images\ov-t-bg.png" />
     <Content Include="Content\assets\images\post-thumb.jpg" />
     <Content Include="Content\assets\images\application-twin-mockup.png" />
@@ -278,14 +279,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Content\Site.less" />
-    <Content Include="Views\Home\_first_block.cshtml" />
     <Content Include="Views\Home\_Soft_world.cshtml" />
     <Content Include="Views\Home\_Features.cshtml" />
     <Content Include="Views\Home\_Team.cshtml" />
     <Content Include="Views\Home\_Team_01.cshtml" />
-    <Content Include="Views\Home\_Screenshot.cshtml" />
+    <Content Include="Views\Home\_Check.cshtml" />
     <Content Include="Views\Home\_Price.cshtml" />
     <Content Include="Views\Home\_Tech.cshtml" />
     <Content Include="Views\Home\_Logos.cshtml" />
@@ -293,8 +292,8 @@
     <Content Include="Views\Home\_Footer.cshtml" />
     <Content Include="Views\Home\UserReg.cshtml" />
     <Content Include="Views\Home\development_line.cshtml" />
-    <Content Include="Views\Home\OLD-Index.cshtml" />
-    <Content Include="Views\Home\_OLD_first_block.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\_first_block.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

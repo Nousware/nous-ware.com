@@ -662,13 +662,13 @@ table tbody tr th, table tbody tr td {
   }
   .banner-section .banner-middle-content {
     position: relative;
-    text-align: left;
+    text-align: center;
     top: 25%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-      top: 50%;
-            /*transform: translateX(50%)*/     
+      top: 20%;
+            transform: translateX(50%)     
   }
   
   .banner-section .banner-content .banner-title {
@@ -2422,17 +2422,11 @@ margin-left: -25px;
 
 /* 14.0 - Team */
 .whiteblock {
-    position: absolute;
-    z-index: 0;
-    padding-top: 10px;
-    padding-right: 0;
-    padding-left: 0;
-    background-color: #FFFFFF;
-    width: 87%;
-    text-align: center;
-    height: 25%;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    border-color: #fff;
+    border-image: none;
+    border-radius: 1px;
+    border-style: solid solid none;
+    border-width: 20px 0;
     
 }
 
