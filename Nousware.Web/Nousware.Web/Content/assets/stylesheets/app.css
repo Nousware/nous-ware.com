@@ -713,7 +713,7 @@ table tbody tr th, table tbody tr td {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
   .banner-section .banner-content .banner-title {
-    font-size: 14px !important;
+    font-size: 9px !important;
   }
   .banner-section .banner-content .banner-description {
     font-size: 10px !important; }
@@ -726,24 +726,27 @@ table tbody tr th, table tbody tr td {
 
 @media (max-width: 768px) {
     .banner-title.text-uppercase.wow.fadeIn {
-        font-size: 30px;
+        font-size: 20px;
     }
     .cut-off{
         display: none;
     }
     .banner-section .banner-content .banner-title {
-        margin: 10px;
+        /*margin: 10px;*/
         text-align: center;
     }
     .banner-section .banner-content .banner-description {
         padding-top: 0px;
-        font-size: 20px;
+        font-size: 12px;
         text-align: center;
+    }
+      .banner-section .banner-content .action-buttons {
+        font-size: 10px;
     }
 }
 @media (max-width: 768px) {
     .description {
-        font-size: 16px;
+        font-size: 12px;
         text-align: left;
         padding: 0px;
     }
